@@ -1,5 +1,7 @@
 # tendermint_application
 
+## follow these steps to run:
+
 1) docker-compose down
 2) sudo rm -r hayoola
 3) mkdir hayoola
