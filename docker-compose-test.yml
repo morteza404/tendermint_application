@@ -1,0 +1,49 @@
+version: "3.8"
+services:
+  abci0:
+    build: .
+    image: "abci-image"
+    container_name: abci0
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.30
+  abci1:
+    build: .
+    image: "abci-image"
+    container_name: abci1
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.31
+  abci2:
+    build: .
+    image: "abci-image"
+    container_name: abci2
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.32
+  abci3:
+    build: .
+    image: "abci-image"
+    container_name: abci3
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.33
+  abci4:
+    build: .
+    image: "abci-image"
+    container_name: abci4
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.34
+  abci5:
+    build: .
+    image: "abci-image"
+    container_name: abci5
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.35
+
+networks:
+  localnet:
+    name: tendermint_localnet
+    external: true
