@@ -7,7 +7,7 @@
 3) mkdir hayoola
 4) chmod 777 hayoola
 5) docker-compose run tendermint init
-6) sudo nano hayoola/config/config.toml\n
+6) sudo nano hayoola/config/config.toml
   proxy_app = tcp://kvstore-app:26658
   pex = false
   create_empty_blocks = false
